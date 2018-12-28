@@ -285,16 +285,13 @@
                                   <a href="{{ url('/new_tracking') }}">Add Course</a>
                               </li>
                               <li>
-                                  <a href="?">View Course</a>
+                                  <a href="{{ url('/view_course') }}">View Course</a>
                               </li>
                           </ul>
                           <!-- /.nav-second-level -->
                       </li>
                       <li>
-                          <a href="tables.html"><i class="fa fa-table fa-fw"></i> Test Results</a>
-                      </li>
-                      <li>
-                          <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Fee Status</a>
+                          <a href="{{ url('/results') }}"><i class="fa fa-table fa-fw"></i> Test Results</a>
                       </li>
                       <li>
                           <a href="#"><i class="fa fa-files-o fa-fw"></i> Miscellaneous<span class="fa arrow"></span></a>

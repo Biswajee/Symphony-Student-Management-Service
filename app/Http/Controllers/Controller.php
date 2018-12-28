@@ -23,4 +23,43 @@ class Controller extends BaseController
       return redirect('/home');
     }
 
+    function application(Request $req) {
+      $msgID = 0;
+      $subject = $req->input('subject');
+      $description = $req->input('description');
+      $filepath = $req->input('filepath');
+
+      $data = array("msgID"=>$msgID, "subject"=>$subject, "description"=>$description, "filepath"=>$filepath);
+
+      DB::table('feedback')->insert($data);
+
+      return redirect('/home');
+    }
+
+    function fetchcourse(Request $req) {
+      $data['data'] = DB::table('course')->get();
+
+      if(count($data) > 0)
+      {
+        return view('viewcourse', $data);
+      }
+      else
+      {
+        return view('viewcourse');
+      }
+    }
+
+    function testscores(Request $req) {
+      $data['data'] = DB::table('test')->get();
+
+      if(count($data) > 0)
+      {
+        return view('scores', $data);
+      }
+      else
+      {
+        return view('scores');
+      }
+    }
+
 }

@@ -18,10 +18,10 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-lg-6">
-              <form role="form">
+              <form role="form" action="/desk_application">
                 <div class="form-group">
                   <label>Subject of message</label>
-                  <input class="form-control" placeholder="Enter your query/grievance">
+                  <input class="form-control" placeholder="Enter your query / grievance" name="subject">
                 </div>
                 <div class="form-group">
                   <label>Reporting to:</label>
@@ -29,11 +29,11 @@
                 </div>
                 <div class="form-group">
                   <label>Relevant Attachments</label>
-                  <input type="file">
+                  <input type="file" name="filepath">
                 </div>
                 <div class="form-group">
                   <label>Description of issue / query</label>
-                  <textarea class="form-control" rows="3"></textarea>
+                  <textarea class="form-control" rows="3" name="description"></textarea>
                 </div>
                 <button type="submit" class="btn btn-default">Submit Button</button>
                 <button type="reset" class="btn btn-default">Reset Button</button>

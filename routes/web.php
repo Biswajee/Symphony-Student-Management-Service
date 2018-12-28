@@ -23,12 +23,10 @@ Route::get('/new_tracking', function () {
     return view('newcourse');
 });
 
+Route::get('/view_course', 'Controller@fetchcourse');
+
 Route::post('/insertcourse', 'Controller@insertcourse');
 
-Route::get('/fee_enquiry', function () {
-    return view('fees');
-});
+Route::get('/results', 'Controller@testscores');
 
-Route::get('/results', function () {
-    return view('scores');
-});
+Route::get('/desk_application', 'Controller@application');
