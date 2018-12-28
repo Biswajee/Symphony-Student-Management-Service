@@ -93,7 +93,7 @@
     </div>
     <div class="footpad purple lighten-1 margin-fix">
       <div class="col-md-12 col-sm-12 text-center">
-        <p style="color: white;">&copy; Symphony 2019 &middot; Made with <i class="fa fa-heart fa-pad" style="color: red" aria-hidden="true"></i>&comma; <i class="fa fa-coffee fa-pad" style="color: brown" aria-hidden="true"></i> and <i class="fa fa-code fa-pad" style="color: black" aria-hidden="true"></i> &middot; View source <a href="https://github.com/Biswajee/Symphony"> here</a></p>
+        <p style="color: white;">&copy; Symphony 2019 &middot; Made with <i class="fa fa-heart fa-pad" style="color: red" aria-hidden="true"></i>&comma; <i class="fa fa-coffee fa-pad" style="color: brown" aria-hidden="true"></i> and <i class="fa fa-code fa-pad" style="color: black" aria-hidden="true"></i> &middot; View source <a href="#"> here</a></p>
       </div>
     </div>
 
