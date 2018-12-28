@@ -18,3 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/new_tracking', function () {
+    return view('newcourse');
+});
+
+Route::post('/insertcourse', 'Controller@insertcourse');
+
+Route::get('/fee_enquiry', function () {
+    return view('fees');
+});
+
+Route::get('/results', function () {
+    return view('scores');
+});
